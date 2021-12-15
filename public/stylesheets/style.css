@@ -1,8 +1,14 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+body, input {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, sans-serif; }
 
-a {
-  color: #00B7FF; }
+form {
+  padding: 20px; }
+
+.form__inputs {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px; }
 
 /*# sourceMappingURL=style.css.map */
