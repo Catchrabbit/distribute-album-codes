@@ -4,7 +4,7 @@ var utils = require('../utils');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'CATCHRABBIT' });
+  res.render('index', { error: false });
 });
 
 router.post('/', function(req, res, next) {

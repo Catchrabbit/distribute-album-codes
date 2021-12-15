@@ -11,4 +11,8 @@ form {
   flex-flow: column nowrap;
   gap: 10px; }
 
+.error {
+  background-color: red;
+  color: white; }
+
 /*# sourceMappingURL=style.css.map */

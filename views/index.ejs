@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>CATCHRABBIT</title>
     <link rel='stylesheet' href='/stylesheets/normalize.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <form action="" method="post">
-      <label for="download_code">Enter Your Album Code</label>
+    <% if (error) { %>
+      <div class="error"><%= error %></div>
+    <% } %>
+    <form action="/" method="post">
+      <label for="download_code_input">Enter Your Album Code</label>
       <div class="form__inputs">
         <input id="download_code_input" name="download_code" type="text" placeholder="Album code" />
         <input type="submit" />
