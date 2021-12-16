@@ -7,9 +7,10 @@ router.get('/:downloadCode', async function(req, res, next) {
   
   for (const [albumCode, betterAngelsCode, nobodyReallyCode, autumnesqueCode] of albumCodeData) {
     const slugifiedAlbumCode = utils.slugify(albumCode)
-
-    if (req.params.downloadCode == slugifiedAlbumCode) {
+    
+    if (req.params.downloadCode == slugifiedAlbumCode || decodeURI(req.params.downloadCode) == albumCode) {
       res.render('download-codes.ejs', {
+        albumCode,
         betterAngelsCode,
         nobodyReallyCode,
         autumnesqueCode,
