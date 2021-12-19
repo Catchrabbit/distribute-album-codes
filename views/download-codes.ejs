@@ -9,9 +9,13 @@
     <%= albumCode %>
     <form action="" method="post">
       <ul>
-        <li><a href=https://catchrabbit.bandcamp.com/yum?code=<%= betterAngelsCode %> target=_blank>Better Angels</a></li>
-        <li><a href=https://catchrabbit.bandcamp.com/yum?code=<%= nobodyReallyCode %> target=_blank>Nobody Really Knows</a></li>
-        <li><a href=https://catchrabbit.bandcamp.com/yum?code=<%= autumnesqueCode %> target=_blank>Autumnesque</a></li>
+        <% tracks.forEach(function(track){ %>
+          <%- include('bandcamp-link', {
+            code: track.code,
+            name: track.name,
+            releaseDate: track.releaseDate
+          }); %>
+        <% }); %>
       </ul>
     </form>
   </body>
