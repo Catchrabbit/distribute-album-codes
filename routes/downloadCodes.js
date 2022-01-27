@@ -33,7 +33,8 @@ router.get('/:downloadCode', async function(req, res, next) {
           },
           {
             name: 'Autumnesque',
-            code: autumnesqueCode
+            code: autumnesqueCode,
+            releaseDate: new Date(2022, 0, 28)
           },
           {
             name: 'The Future is Gay',
