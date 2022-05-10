@@ -38,7 +38,8 @@ router.get('/:downloadCode', async function(req, res, next) {
           },
           {
             name: 'The Future is Gay',
-            code: theFutureIsGayCode
+            code: theFutureIsGayCode,
+            releaseDate: new Date(2022, 4, 13)
           },
           {
             name: 'Folding in Thirds',
