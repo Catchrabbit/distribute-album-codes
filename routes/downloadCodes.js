@@ -43,7 +43,8 @@ router.get('/:downloadCode', async function(req, res, next) {
           },
           {
             name: 'Folding in Thirds',
-            code: foldingInThirdsCode
+            code: foldingInThirdsCode,
+            releaseDate: new Date(2022, 5, 30)
           },
           {
             name: 'Clutter',
