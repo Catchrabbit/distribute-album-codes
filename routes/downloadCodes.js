@@ -48,7 +48,8 @@ router.get('/:downloadCode', async function(req, res, next) {
           },
           {
             name: 'Clutter',
-            code: clutterCode
+            code: clutterCode,
+            releaseDate: new Date(2022, 8, 30)
           },
           {
             name: 'Moonlight Trials',
